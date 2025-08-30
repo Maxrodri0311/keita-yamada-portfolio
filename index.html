@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keita Yamada - Designer & Developer portfolio showcasing web design experiments and creative projects">
+    <meta name="keywords" content="web design, developer, portfolio, creative coding, WebGL, three.js">
+    <meta name="author" content="Keita Yamada">
+    <title>Keita Yamada</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- WebGL Canvas will be inserted here -->
+    <div id="webgl-fallback" class="webgl-fallback" style="display: none;">
+        <p>WebGL is not supported in your browser. The background animation has been disabled for better performance.</p>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="site-title">Keita Yamada</h1>
+            <p class="site-subtitle">Portfolio</p>
+            
+            <nav class="theme-nav" role="navigation" aria-label="Theme selection">
+                <button id="theme-light" class="theme-toggle active" aria-pressed="true" data-theme="light">Light</button>
+                <button id="theme-dark" class="theme-toggle" aria-pressed="false" data-theme="dark">Dark</button>
+                <button id="theme-mono" class="theme-toggle" aria-pressed="false" data-theme="mono">Monospaced</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="intro-section">
+            <div class="intro-content">
+                <h2 class="intro-title">Keita Yamada</h2>
+                <p class="intro-subtitle">Designer & Developer</p>
+                
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                    <ol class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#info" class="nav-link">Info</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#copycats" class="nav-link">Copycats</a></li>
+                    </ol>
+                </nav>
+
+                <div class="bio">
+                    <p>© Keita Yamada</p>
+                    <p>Born in 1994 in Osaka, Japan. I believe web design can be more diverse and inspiring. With a mission to present the possibilities of web design, I am pursuing new expressions through experiments and thoughts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="projects-grid">
+                <article class="project-item">
+                    <h3><a href="https://musinsa.droptokyo.com" target="_blank" rel="noopener noreferrer" class="project-link">MUSINSA STYLE GPS</a></h3>
+                    <p class="project-meta">Jun.2025 / Dev / Design: <a href="https://x.com/HiroakiNakano" target="_blank" rel="noopener noreferrer">Hiroaki Nakano</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://fashionpost.jp/special/coach/" target="_blank" rel="noopener noreferrer" class="project-link">Lilas Ikuta meets COACH</a></h3>
+                    <p class="project-meta">April.2025 / Dev / Design: <a href="https://x.com/HiroakiNakano" target="_blank" rel="noopener noreferrer">Hiroaki Nakano</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://shogotominaga.com" target="_blank" rel="noopener noreferrer" class="project-link">Shogo Tominaga</a></h3>
+                    <p class="project-meta">Mar.2025 / Dev / Design: <a href="https://x.com/HiroakiNakano" target="_blank" rel="noopener noreferrer">Hiroaki Nakano</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://lqve.jp" target="_blank" rel="noopener noreferrer" class="project-link">LQVE</a></h3>
+                    <p class="project-meta">Mar.2025 / Dev / Design: <a href="https://x.com/HiroakiNakano" target="_blank" rel="noopener noreferrer">Hiroaki Nakano</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://production-hasu.work" target="_blank" rel="noopener noreferrer" class="project-link">PRODUCTION HASU</a></h3>
+                    <p class="project-meta">Oct.2024 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://emuni.co.jp" target="_blank" rel="noopener noreferrer" class="project-link">emuni</a></h3>
+                    <p class="project-meta">Jul.2024 / Dev / Design: <a href="https://x.com/HiroakiNakano" target="_blank" rel="noopener noreferrer">Hiroaki Nakano</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://under-voyager.mikapikazo.info" target="_blank" rel="noopener noreferrer" class="project-link">UNDER VOYAGER</a></h3>
+                    <p class="project-meta">Apr.2024 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://obake.blue/" target="_blank" rel="noopener noreferrer" class="project-link">obake.blue</a></h3>
+                    <p class="project-meta">Feb.2024 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://cocoon-records.info/" target="_blank" rel="noopener noreferrer" class="project-link">cocoon records</a></h3>
+                    <p class="project-meta">Jan.2024 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://midnight-grand-orchestra.jp/starpeggio/" target="_blank" rel="noopener noreferrer" class="project-link">Starpeggio</a></h3>
+                    <p class="project-meta">Aug.2023 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://bnn.co.jp" target="_blank" rel="noopener noreferrer" class="project-link">BNN Online Store</a></h3>
+                    <p class="project-meta">Jul.2023 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://ily-girl.mikapikazo.info" target="_blank" rel="noopener noreferrer" class="project-link">ILY GIRL</a></h3>
+                    <p class="project-meta">Jul.2023 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://midnight-grand-orchestra.jp/overture-bluray-dvd/" target="_blank" rel="noopener noreferrer" class="project-link">OVERTURE</a></h3>
+                    <p class="project-meta">Mar.2023 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://yansukim.com" target="_blank" rel="noopener noreferrer" class="project-link">yansuKIM</a></h3>
+                    <p class="project-meta">Jan.2023 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://punchred.xyz" target="_blank" rel="noopener noreferrer" class="project-link">PUNCH</a></h3>
+                    <p class="project-meta">Nov.2022 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://solani-illustration.xyz" target="_blank" rel="noopener noreferrer" class="project-link">SOLANI</a></h3>
+                    <p class="project-meta">Nov.2022 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://revenge-pop.mikapikazo.info" target="_blank" rel="noopener noreferrer" class="project-link">REVENGE POP</a></h3>
+                    <p class="project-meta">Oct.2022 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://reinakanishi.com" target="_blank" rel="noopener noreferrer" class="project-link">REI NAKANISHI</a></h3>
+                    <p class="project-meta">Jun.2022 / Dev / Design: <a href="https://okuma.id/" target="_blank" rel="noopener noreferrer">OKUMA</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://holo.punchred.xyz" target="_blank" rel="noopener noreferrer" class="project-link">HOLO.g</a></h3>
+                    <p class="project-meta">Dec.2021 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://pan-projects.com" target="_blank" rel="noopener noreferrer" class="project-link">PAN- PROJECTS</a></h3>
+                    <p class="project-meta">Sep.2021 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://vixi-vixi.jp" target="_blank" rel="noopener noreferrer" class="project-link">VIXI</a></h3>
+                    <p class="project-meta">Jun.2021 / Dev / Design: <a href="https://hydekick.jp/" target="_blank" rel="noopener noreferrer">hydekick</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://yoshikiokamura.art" target="_blank" rel="noopener noreferrer" class="project-link">Yoshiki Okamura</a></h3>
+                    <p class="project-meta">Feb.2021 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://buoy.work" target="_blank" rel="noopener noreferrer" class="project-link">buoy</a></h3>
+                    <p class="project-meta">Oct.2020 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://100daysofpoetry.gallery" target="_blank" rel="noopener noreferrer" class="project-link">100 DAYS OF POETRY</a></h3>
+                    <p class="project-meta">May.2020 / Design & Dev</p>
+                </article>
+
+                <article class="project-item">
+                    <h3><a href="https://nanameinc.jp" target="_blank" rel="noopener noreferrer" class="project-link">naname</a></h3>
+                    <p class="project-meta">Mar.2020 / Dev / Design: <a href="https://hydekick.jp/" target="_blank" rel="noopener noreferrer">hydekick</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="social-links">
+            <ul class="social-list">
+                <li><a href="https://twitter.com/P5_keita" target="_blank" rel="noopener noreferrer" class="social-link">X(Twitter) ↗</a></li>
+                <li><a href="https://www.instagram.com/p5aholic/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram ↗</a></li>
+                <li><a href="https://bsky.app/profile/p5aholic.bsky.social" target="_blank" rel="noopener noreferrer" class="social-link">Bluesky ↗</a></li>
+            </ul>
+
+            <ul class="external-links">
+                <li><a href="https://experiments.p5aholic.me" target="_blank" rel="noopener noreferrer" class="external-link">experiments.p5aholic.me ↗</a></li>
+                <li><a href="https://playground.p5aholic.me" target="_blank" rel="noopener noreferrer" class="external-link">playground.p5aholic.me ↗</a></li>
+            </ul>
+        </section>
+
+        <section class="awards-section">
+            <ul class="awards-list">
+                <li>Awwwards Independent of the Year<br>2020 Nominee</li>
+                <li>Awwwards Site of the Day<br>Web Graphic Experiments</li>
+                <li>Awwwards Site of the Day<br>100 DAYS OF POETRY</li>
+            </ul>
+        </section>
+
+        <section class="contact-section">
+            <p><a href="https://p5aholic.notion.site/p5aholic/Web-aac658c501b8458080dcc19e5ff26e51" target="_blank" rel="noopener noreferrer" class="contact-link">制作の依頼について ↗</a></p>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <article class="faq-item">
+                <h3>How did you make the background effect in this website?</h3>
+                <p>I used three.js to write WebGL faster and the background effect is written in glsl.<br>
+                If you are interested in glsl, I recommend you to read <a href="https://thebookofshaders.com" target="_blank" rel="noopener noreferrer">The Book of Shaders</a>.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Where can I find your code?</h3>
+                <p>I have GitHub account but my projects (including this website) are private repository.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Can I use your code?</h3>
+                <p>I don't allow anyone to use my code. I don't wanna say such thing but I got too much questions about that.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>How did you learn web frontend and WebGL/glsl ?</h3>
+                <p>By reading books and articles on the internet.<br>
+                Here is a list of web pages I recommend to read.</p>
+                <ul>
+                    <li><a href="https://threejs.org/examples/" target="_blank" rel="noopener noreferrer">three.js examples</a></li>
+                    <li><a href="https://thebookofshaders.com" target="_blank" rel="noopener noreferrer">The Book of Shaders</a></li>
+                    <li><a href="https://threejs-journey.com/" target="_blank" rel="noopener noreferrer">three.js journey</a></li>
+                    <li><a href="https://tympanus.net/codrops/?s=three.js&search-type=posts" target="_blank" rel="noopener noreferrer">Codrops</a></li>
+                </ul>
+            </article>
+
+            <article class="faq-item">
+                <h3>What libraries do you use?</h3>
+                <p><a href="https://gsap.com/" target="_blank" rel="noopener noreferrer">GSAP</a> for creating animations.<br>
+                <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">three.js</a> for writing WebGL code.<br>
+                <a href="https://tweakpane.github.io/docs/" target="_blank" rel="noopener noreferrer">Tweakpane</a> for tuning parameters.<br>
+                <a href="https://alpinejs.dev/" target="_blank" rel="noopener noreferrer">Alpine.js</a> is my favorite JavaScript framework.</p>
+            </article>
+        </section>
+
+        <section id="copycats" class="copycats-section">
+            <h3>Copycats</h3>
+            <p>Websites created by plagiarizing the source code of this portfolio site are listed here.</p>
+            <p>It's completely normal to feel inspired by someone's work and want to imitate it, and that's how I've honed my skills as well. What I hate are idiots who just copy the source code and release it as their own.</p>
+            <p>The links below are to a Google Drive page where evidentiary screenshots were saved. The Names of the website owners are links to their sns account.</p>
+            <p>If you find any website that has stolen my website's code, please let me know.(p5aholic923@gmail.com)</p>
+            
+            <ul class="copycats-list">
+                <li><a href="https://drive.google.com/file/d/1pE0s75eaezGUFkm0sFfdMW8vddi1X6I_/view?usp=drive_link" target="_blank" rel="noopener noreferrer">durai69.github.io/Portfolio/</a> by <a href="https://www.linkedin.com/in/durailingam/" target="_blank" rel="noopener noreferrer">Durai Lingam</a></li>
+                <li><a href="https://drive.google.com/file/d/1d-EQmbR7YAJCiscgkju2pCpdMO_0kjT4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">web.stanford.edu/~efezldn/</a> by <a href="https://x.com/efezldn" target="_blank" rel="noopener noreferrer">Efe Zaladin</a></li>
+                <li><a href="https://drive.google.com/file/d/1EJQM8MccOUm8AIXQ4V61Lt_C7BISRckC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">bkhtdev.com</a> by <a href="https://x.com/thebkht" target="_blank" rel="noopener noreferrer">Bakhtiyor Ganijon</a></li>
+                <li><a href="https://drive.google.com/file/d/1lC9yuqaGStO83uAQHGt7k1C83smslXH4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">manosunidas.ar</a> by Gomez Alberto A.</li>
+                <li><a href="https://drive.google.com/file/d/1JD6GH__-5tIO7hF1VgkYJVg-aJ06cyk-/view?usp=drive_link" target="_blank" rel="noopener noreferrer">huszar-bence.com</a> by <a href="https://github.com/huss4r" target="_blank" rel="noopener noreferrer">Huszár Bence</a></li>
+                <li><a href="https://drive.google.com/file/d/1xeYxiTV6KWc_RK-6xijzUF1cAJLFbjXs/view?usp=drive_link" target="_blank" rel="noopener noreferrer">veronicapinar.thepixelperfect.es</a> by <a href="https://www.linkedin.com/in/veronica-pinar/" target="_blank" rel="noopener noreferrer">Verónica Pinar</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Performance monitoring and animation controls -->
+    <div id="performance-controls" class="performance-controls" style="display: none;">
+        <button id="toggle-animation" class="control-btn">Disable Animation</button>
+        <span id="fps-counter" class="fps-counter"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+    <script src="js/shaders.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
